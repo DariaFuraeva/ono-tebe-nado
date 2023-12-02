@@ -1,3 +1,3 @@
 # ono-tebe-nado
-# Проект "Оно тебе надо"
-# git@github.com:DariaFuraeva/ono-tebe-nado.git
+Проект "Оно тебе надо"
+git@github.com:DariaFuraeva/ono-tebe-nado.git](https://github.com/DariaFuraeva/ono-tebe-nado.git)https://github.com/DariaFuraeva/ono-tebe-nado.git
