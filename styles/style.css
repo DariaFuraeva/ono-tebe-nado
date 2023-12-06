@@ -303,11 +303,6 @@
   margin: 182px 50px 18px;
 }
 
-/*
-TODO Разобраться с z-index у селекторов .about__logo и .about__logo-image.
-Нужный эффект достигнут, но почему так -- непонятно :((
-*/
-
 .about__column {
   justify-self: center;
   align-self: stretch;
