@@ -10,7 +10,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr min-content 1fr;
   justify-items: center;
   justify-content: space-between;
   justify-content: space-between;
@@ -72,11 +72,13 @@
   font-style: normal;
   font-size: 18px;
   color: #000;
-
+  align-items: start;
+  line-height: 1.35;
 }
 
 .address__link {
-  line-height: 1.35;
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
 
 .address :last-child {
@@ -101,15 +103,17 @@
   color:#fff;
   background-image: url("../images/cover.jpg");
   gap: 125px;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover__title {
+  /*Это нужно, чтобы задать z-index:*/
+  position: relative;
+  z-index: 1;
 }
 
 .aligned-text {
-
-/*Это нужно, чтобы задать z-index*/
-
-  position: relative;
-
-  z-index: 1;
   display: block;
   font-weight: 700;
   font-size: 100px;
@@ -141,9 +145,9 @@
 .cover__description {
 
   /*Это нужно, чтобы задать z-index:*/
-
   position: relative;
   z-index: 1;
+
   display: flex;
   justify-content: right;
   align-items: center;
@@ -207,10 +211,11 @@
   justify-content: center;
   gap: 25px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
-
+  min-height: 450px;
 
   /* Это нужно, чтобы задать z-index: */
 
@@ -225,22 +230,23 @@
 .card-link {
   display: block;
   width: 430px;
-  display:block;
-  min-height: 100%;
+  height: 100%;
   text-decoration: none;
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 450px;
+  height: 100%;
   padding: 50px 40px;
   color:#fff;
   font-size: 20px;
   line-height: 1.2;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__title {
@@ -371,6 +377,7 @@
   justify-content:end ;
   gap: 50px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .footer__social-link {
