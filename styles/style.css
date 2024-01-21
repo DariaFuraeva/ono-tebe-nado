@@ -216,6 +216,7 @@
 
 .lots__card-list-item {
   min-height: 450px;
+  width: 430px;
 
   /* Это нужно, чтобы задать z-index: */
 
@@ -229,7 +230,6 @@
 
 .card-link {
   display: block;
-  width: 430px;
   height: 100%;
   text-decoration: none;
 }
